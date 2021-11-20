@@ -79,7 +79,6 @@
 				75637761492358E835AF746C /* Pods-CuttingMode.debug.xcconfig */,
 				639BAF0F3CC8200D72580CBF /* Pods-CuttingMode.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
