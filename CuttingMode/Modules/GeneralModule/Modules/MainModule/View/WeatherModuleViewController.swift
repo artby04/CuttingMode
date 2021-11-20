@@ -56,6 +56,6 @@ extension MainModuleViewController: MainModuleViewInput {
     func updateMainPhoto() {
         let params = dataSource.modelsParams()
         mainPhotoView.text = "test"
-        mainPhotoView.textColor = .white
+        mainPhotoView.textColor = .yellow
     }
 }
