@@ -9,6 +9,8 @@ import Foundation
 import UIModule
 
 public final class GeneralCoordinator: Coordinatable {
+    
+
     private let navigator: Navigating
 
     public init(navigator: Navigating) {
@@ -40,11 +42,8 @@ public final class GeneralCoordinator: Coordinatable {
         let moduleInfo = MainModuleConfigurator().configure(router: self)
 
         let presentable = moduleInfo.view.toPresent()
-        navigator.presentModally(presentable,
-                                 animated: false,
-                                 presentationStyle: .fullScreen,
-                                 transitionStyle: nil,
-                                 completion: completion)
+        presentable.title = "Режимы резания"
+        navigator.push(presentable, animated: animated, completion: completion)
     }
 }
 

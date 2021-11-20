@@ -10,3 +10,4 @@ import Foundation
 protocol MainModuleViewOutput: AnyObject {
     func viewDidLoad()
 }
+

@@ -10,9 +10,11 @@ import UIKit
 public final class CustomNavigationController: UINavigationController {
     public weak var interactivePopDelegate: InteractivePopDelegate?
 
+
+
     public override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupNavigationBar()
         delegate = self
     }
 
@@ -33,6 +35,12 @@ public final class CustomNavigationController: UINavigationController {
         CATransaction.setCompletionBlock(completion)
         popViewController(animated: animated)
         CATransaction.commit()
+    }
+
+    private func setupNavigationBar() {
+       
+        navigationBar.backgroundColor = .white
+
     }
 }
 
