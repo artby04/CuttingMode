@@ -1,0 +1,31 @@
+PODS:
+  - GeneralModule (1.0.0):
+    - SnapKit
+    - UIModule
+  - SnapKit (5.0.1)
+  - UIModule (1.0.0):
+    - SnapKit
+
+DEPENDENCIES:
+  - GeneralModule (from `CuttingMode/Modules/GeneralModule`)
+  - SnapKit
+  - UIModule (from `CuttingMode/Modules/UIModule`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SnapKit
+
+EXTERNAL SOURCES:
+  GeneralModule:
+    :path: CuttingMode/Modules/GeneralModule
+  UIModule:
+    :path: CuttingMode/Modules/UIModule
+
+SPEC CHECKSUMS:
+  GeneralModule: d9af2cc18a14ca2346050b551ff53dbdacb9a68c
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  UIModule: b20eb74f9488d2e70c98f0156ff90a5596d500fb
+
+PODFILE CHECKSUM: 1f2f678a21b42ccbe56132da3d940d9083418e3d
+
+COCOAPODS: 1.10.1

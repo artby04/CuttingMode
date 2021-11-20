@@ -1,0 +1,6 @@
+module Pods_CuttingMode {
+  umbrella header "Pods-CuttingMode-umbrella.h"
+
+  export *
+  module * { export * }
+}

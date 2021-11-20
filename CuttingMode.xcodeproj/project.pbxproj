@@ -8,22 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		848D19D92749485500B1445F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D19D82749485500B1445F /* AppDelegate.swift */; };
-		848D19DB2749485500B1445F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D19DA2749485500B1445F /* SceneDelegate.swift */; };
-		848D19DD2749485500B1445F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D19DC2749485500B1445F /* ViewController.swift */; };
-		848D19E02749485500B1445F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848D19DE2749485500B1445F /* Main.storyboard */; };
 		848D19E22749485800B1445F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848D19E12749485800B1445F /* Assets.xcassets */; };
 		848D19E52749485800B1445F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848D19E32749485800B1445F /* LaunchScreen.storyboard */; };
+		9EDEB84276BD152E13EBC466 /* libPods-CuttingMode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8163D97176CAEA7F5B9C2E6 /* libPods-CuttingMode.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		639BAF0F3CC8200D72580CBF /* Pods-CuttingMode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuttingMode.release.xcconfig"; path = "Target Support Files/Pods-CuttingMode/Pods-CuttingMode.release.xcconfig"; sourceTree = "<group>"; };
+		75637761492358E835AF746C /* Pods-CuttingMode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuttingMode.debug.xcconfig"; path = "Target Support Files/Pods-CuttingMode/Pods-CuttingMode.debug.xcconfig"; sourceTree = "<group>"; };
 		848D19D52749485500B1445F /* CuttingMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuttingMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848D19D82749485500B1445F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		848D19DA2749485500B1445F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		848D19DC2749485500B1445F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		848D19DF2749485500B1445F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		848D19E12749485800B1445F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		848D19E42749485800B1445F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		848D19E62749485800B1445F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8163D97176CAEA7F5B9C2E6 /* libPods-CuttingMode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CuttingMode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +29,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EDEB84276BD152E13EBC466 /* libPods-CuttingMode.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63D86C0BC3FD8E116E24D3DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8163D97176CAEA7F5B9C2E6 /* libPods-CuttingMode.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		848D19CC2749485500B1445F = {
 			isa = PBXGroup;
 			children = (
 				848D19D72749485500B1445F /* CuttingMode */,
 				848D19D62749485500B1445F /* Products */,
+				F84E74352B782BDFA9BC1923 /* Pods */,
+				63D86C0BC3FD8E116E24D3DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +66,21 @@
 			isa = PBXGroup;
 			children = (
 				848D19D82749485500B1445F /* AppDelegate.swift */,
-				848D19DA2749485500B1445F /* SceneDelegate.swift */,
-				848D19DC2749485500B1445F /* ViewController.swift */,
-				848D19DE2749485500B1445F /* Main.storyboard */,
 				848D19E12749485800B1445F /* Assets.xcassets */,
 				848D19E32749485800B1445F /* LaunchScreen.storyboard */,
 				848D19E62749485800B1445F /* Info.plist */,
 			);
 			path = CuttingMode;
+			sourceTree = "<group>";
+		};
+		F84E74352B782BDFA9BC1923 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75637761492358E835AF746C /* Pods-CuttingMode.debug.xcconfig */,
+				639BAF0F3CC8200D72580CBF /* Pods-CuttingMode.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +90,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 848D19E92749485800B1445F /* Build configuration list for PBXNativeTarget "CuttingMode" */;
 			buildPhases = (
+				26D5546B9EA049BA8AF80326 /* [CP] Check Pods Manifest.lock */,
 				848D19D12749485500B1445F /* Sources */,
 				848D19D22749485500B1445F /* Frameworks */,
 				848D19D32749485500B1445F /* Resources */,
@@ -126,34 +143,48 @@
 			files = (
 				848D19E52749485800B1445F /* LaunchScreen.storyboard in Resources */,
 				848D19E22749485800B1445F /* Assets.xcassets in Resources */,
-				848D19E02749485500B1445F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26D5546B9EA049BA8AF80326 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CuttingMode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		848D19D12749485500B1445F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848D19DD2749485500B1445F /* ViewController.swift in Sources */,
 				848D19D92749485500B1445F /* AppDelegate.swift in Sources */,
-				848D19DB2749485500B1445F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		848D19DE2749485500B1445F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				848D19DF2749485500B1445F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		848D19E32749485800B1445F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,12 +314,14 @@
 		};
 		848D19EA2749485800B1445F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75637761492358E835AF746C /* Pods-CuttingMode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H6QCQ456SM;
 				INFOPLIST_FILE = CuttingMode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,18 +329,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = artyom.CuttingMode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		848D19EB2749485800B1445F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 639BAF0F3CC8200D72580CBF /* Pods-CuttingMode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H6QCQ456SM;
 				INFOPLIST_FILE = CuttingMode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = artyom.CuttingMode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

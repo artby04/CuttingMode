@@ -1,0 +1,22 @@
+{
+  "name": "UIModule",
+  "authors": {
+    "Username": "Artyom"
+  },
+  "version": "1.0.0",
+  "summary": "Module for UI components equal for other modules.",
+  "homepage": "https://github.com/username/MyCustomPod",
+  "source": {
+    "git": "https://github.com/username/MyCustomPod.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "**/*.{swift,m}",
+  "dependencies": {
+    "SnapKit": [
+
+    ]
+  }
+}

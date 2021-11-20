@@ -1,0 +1,6 @@
+module GeneralModule {
+  umbrella header "GeneralModule-umbrella.h"
+
+  export *
+  module * { export * }
+}
