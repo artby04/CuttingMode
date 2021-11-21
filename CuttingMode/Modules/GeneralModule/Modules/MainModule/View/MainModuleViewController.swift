@@ -10,16 +10,16 @@ import UIKit
 import UIModule
 
 final class MainModuleViewController: UIViewController {
-//      let label = ModeTypeView()
+    //      let label = ModeTypeView()
 
-//    var title: UILabel = {
-//        let button
-//    }
+    //    var title: UILabel = {
+    //        let button
+    //    }
 
     let logoImage = UIImageView(image: #imageLiteral(resourceName: "145659"), contentMode: .scaleAspectFit)
     
     
-//    private let mainLabel = UILabel(frame: .zero)
+    //    private let mainLabel = UILabel(frame: .zero)
 
     // Dependencies
     var dataSource: MainModuleViewDataSource!
@@ -30,7 +30,7 @@ final class MainModuleViewController: UIViewController {
 
     override func loadView() {
         super.loadView()
-//        setupMainLabel()
+        //        setupMainLabel()
         setupUI()
     }
 
@@ -45,20 +45,25 @@ final class MainModuleViewController: UIViewController {
 
     private func setupConstraints() {
         view.addSubview(logoImage)
+
+        logoImage.snp.makeConstraints { make in
+            make.width.height.equalTo(50)
+            make.center.equalTo(self.view)
+        }
         logoImage.translatesAutoresizingMaskIntoConstraints = false
         logoImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 160).isActive = true
         logoImage.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     }
 
-//    private func setupMainLabel() {
-//        mainLabel.contentMode = .scaleAspectFill
-//    }
-//
+    //    private func setupMainLabel() {
+    //        mainLabel.contentMode = .scaleAspectFill
+    //    }
+    //
     private func setupUI() {
-        view.backgroundColor = Pallete.Backgroud.primary
+        view.backgroundColor =  Pallete.Backgroud.primary
 
-//        view.addSubview(mainLabel)
-////        mainLabel.
+        //        view.addSubview(mainLabel)
+        ////        mainLabel.
     }
 }
 
@@ -71,7 +76,7 @@ extension MainModuleViewController: MainModuleViewInput {
 
     func updateMainPhoto() {
         let params = dataSource.modelsParams()
-//        mainLabel.text = "12312323"
-//        mainLabel.textColor = .yellow
+        //        mainLabel.text = "12312323"
+        //        mainLabel.textColor = .yellow
     }
 }
