@@ -13,6 +13,11 @@ public enum Pallete {
     
         public static var primary: UIColor { RawColors.Blue.blue0 }
     }
+
+    public enum Content {
+
+        public static var primary: UIColor { RawColors.White.white }
+    }
 }
 
 extension Pallete {
@@ -24,7 +29,10 @@ extension Pallete {
             static let blue0 = UIColor(hex: 0x38415b)
         }
         
-        
+        enum White {
+
+            static let white = UIColor(hex: 0xFCFFFF)
+        }
     }
 }
 

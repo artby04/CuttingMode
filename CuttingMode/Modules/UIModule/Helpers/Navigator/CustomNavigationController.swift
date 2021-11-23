@@ -40,14 +40,14 @@ public final class CustomNavigationController: UINavigationController {
     private func setupNavigationBar() {
        
 
-      
+        navigationBar.backgroundColor = Pallete.Backgroud.primary
+
         if #available(iOS 12.0, *) {
-            navigationBar.backgroundColor = Pallete.Backgroud.primary
             navigationBar.prefersLargeTitles = true
-            navigationBar.barTintColor = UIColor.green
-            navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+            navigationBar.largeTitleTextAttributes = [.foregroundColor: Pallete.Content.primary]
+
         } else {
-            navigationBar.backgroundColor = .white
+            navigationBar.backgroundColor = UIColor(hex: 0x38415b)
         }
 
     }

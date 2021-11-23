@@ -9,7 +9,34 @@ import SnapKit
 import UIKit
 import UIModule
 
-final class MainModuleViewController: UIViewController {
+final class MainModuleViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+
+    private var collectionView: UICollectionView?
+
+
+    private func setupCollectionView() {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        layout.itemSize = CGSize(width: (view.frame.width/2)-3,
+                                 height: (view.frame.width/2)-3)
+        layout.minimumLineSpacing = 1
+        layout.minimumInteritemSpacing = 1
+        collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+
+        guard let collectionView = collectionView else { return }
+        collectionView.register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: CustomCollectionViewCell.identifier)
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.backgroundColor = Pallete.Backgroud.primary
+//        collectionView.snp.makeConstraints { make in
+//     
+//            make.center.equalTo(self.view)
+//        }
+        view.addSubview(collectionView)
+        collectionView.frame = view.bounds
+    }
+
+
     //      let label = ModeTypeView()
 
     //    var title: UILabel = {
@@ -31,6 +58,7 @@ final class MainModuleViewController: UIViewController {
     override func loadView() {
         super.loadView()
         //        setupMainLabel()
+        setupCollectionView()
         setupUI()
     }
 
@@ -65,6 +93,17 @@ final class MainModuleViewController: UIViewController {
         //        view.addSubview(mainLabel)
         ////        mainLabel.
     }
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CustomCollectionViewCell.identifier, for: indexPath)
+
+        return cell
+    }
+
 }
 
 // MARK: - MainModuleViewInput
