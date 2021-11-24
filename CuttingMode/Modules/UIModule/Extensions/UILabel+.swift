@@ -7,11 +7,13 @@
 
 import Foundation
 
-extension UILabel {
-    func setText(_ text: String,
-                 lineHeight: CGFloat,
-                 alignment: NSTextAlignment? = nil,
-                 lineBreakMode: NSLineBreakMode? = nil) {
+public extension UILabel {
+    func setText(
+        _ text: String,
+        lineHeight: CGFloat,
+        alignment: NSTextAlignment? = nil,
+        lineBreakMode: NSLineBreakMode? = nil
+    ) {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.minimumLineHeight = lineHeight
         if let alignment = alignment {

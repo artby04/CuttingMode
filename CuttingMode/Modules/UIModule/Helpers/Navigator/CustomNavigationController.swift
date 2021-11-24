@@ -40,15 +40,18 @@ public final class CustomNavigationController: UINavigationController {
     private func setupNavigationBar() {
        
 
-        navigationBar.backgroundColor = Pallete.Backgroud.primary
+        navigationBar.barTintColor = .white
 
-        if #available(iOS 12.0, *) {
-            navigationBar.prefersLargeTitles = true
-            navigationBar.largeTitleTextAttributes = [.foregroundColor: Pallete.Content.primary]
+        navigationBar.shadowImage = .none
 
-        } else {
-            navigationBar.backgroundColor = UIColor(hex: 0x38415b)
-        }
+//        if #available(iOS 12.0, *) {
+//            navigationBar.prefersLargeTitles = true
+//            navigationBar.largeTitleTextAttributes = [.foregroundColor: Pallete.Content.primary]
+//
+//        } else {
+//            navigationBar.shadowImage = .none
+//            navigationBar.backgroundColor = UIColor(hex: 0x38415b)
+//        }
 
     }
 }

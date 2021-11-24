@@ -46,12 +46,11 @@
 		7DC3A9707E4F67DCAC749DD5151EB0A8 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2032CD732982286C6A210F3568014E05 /* UILabel+.swift */; };
 		81E0F825D04F679D98F34D53C6B1E56A /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A54E43B6DFAA6BC849E4547B7C282 /* ConstraintLayoutGuide.swift */; };
 		82140FBEFB237BD907E5BF6F404337E5 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D91720327B83199BF4BEF38F831D53 /* UITableView+.swift */; };
-		840D41322749955D005FAA0A /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D41312749955D005FAA0A /* UIImageView + Extension.swift */; };
+		84225340274EE101002FA4CD /* ModeTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422533F274EE101002FA4CD /* ModeTypeCell.swift */; };
 		8440C7502749729C004BE6E7 /* Pallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440C74F2749729C004BE6E7 /* Pallete.swift */; };
 		844E843E274977DA005C0A54 /* UIColor+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E843D274977DA005C0A54 /* UIColor+Init.swift */; };
 		844E844127497959005C0A54 /* ModeTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E844027497959005C0A54 /* ModeTypeView.swift */; };
 		84A5EC6367B32A6668E9E2EBEF600764 /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A288038E0189DD08183BC40166D9203 /* UICollectionView+.swift */; };
-		84E18843274BF5BA00CF8DD9 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E18842274BF5BA00CF8DD9 /* CustomCollectionViewCell.swift */; };
 		86D720CD42136A78A4A5C46F9C538350 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFFB67EF8E7135A063A1163E2BE514E /* ConstraintDSL.swift */; };
 		8771BC85BC87C5F3668CD29C1B29FE9C /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E835C19E2AF82704FC09CE773AF71D8 /* UITableViewCell+.swift */; };
 		8A5128D648C04145BB9A870DE3389DA5 /* DefaultNibAssociatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C0C9D99A511A000F1731235E02302B /* DefaultNibAssociatable.swift */; };
@@ -193,11 +192,10 @@
 		7A9F96B6A4A57D381DC0D2524811582B /* MainModuleViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainModuleViewInput.swift; sourceTree = "<group>"; };
 		7FF26E13590AB8190A1F5DEC7E7BECCA /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
 		8403430BA69966E02917642B4BD2E128 /* CustomNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
-		840D41312749955D005FAA0A /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
+		8422533F274EE101002FA4CD /* ModeTypeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModeTypeCell.swift; sourceTree = "<group>"; };
 		8440C74F2749729C004BE6E7 /* Pallete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pallete.swift; sourceTree = "<group>"; };
 		844E843D274977DA005C0A54 /* UIColor+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Init.swift"; sourceTree = "<group>"; };
 		844E844027497959005C0A54 /* ModeTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeTypeView.swift; sourceTree = "<group>"; };
-		84E18842274BF5BA00CF8DD9 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		8CA0A5F80FD7D1C11B44362F2840A71F /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
 		8F5DE3E7E262E594468D20564DC6C73C /* DefaultReuseIdentifiable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultReuseIdentifiable.swift; sourceTree = "<group>"; };
 		90363F632F42F81DAFA242A8F46218E7 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
@@ -379,13 +377,11 @@
 		224BD5836D5ED514AC667CA00D4125BD /* View */ = {
 			isa = PBXGroup;
 			children = (
-				840D41302749953F005FAA0A /* Ext */,
 				0313D78BC3E9E4D63B5276383BB2BF23 /* MainModuleViewController.swift */,
 				6126680B27DA7A5BC216A76C4193B718 /* MainModuleViewControllerState.swift */,
 				B9620D1D2E7348FADB82AE902D9880EF /* MainModuleViewDataSource.swift */,
 				7A9F96B6A4A57D381DC0D2524811582B /* MainModuleViewInput.swift */,
 				51C48BFA07343E42964CD8D5437CFA6C /* MainModuleViewOutput.swift */,
-				84E18842274BF5BA00CF8DD9 /* CustomCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -455,18 +451,27 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
-		840D41302749953F005FAA0A /* Ext */ = {
+		84225338274EDD0D002FA4CD /* Kit */ = {
 			isa = PBXGroup;
 			children = (
-				840D41312749955D005FAA0A /* UIImageView + Extension.swift */,
+				8440C74F2749729C004BE6E7 /* Pallete.swift */,
 			);
-			path = Ext;
+			path = Kit;
+			sourceTree = "<group>";
+		};
+		84225343274EE471002FA4CD /* ModeType */ = {
+			isa = PBXGroup;
+			children = (
+				844E844027497959005C0A54 /* ModeTypeView.swift */,
+				8422533F274EE101002FA4CD /* ModeTypeCell.swift */,
+			);
+			path = ModeType;
 			sourceTree = "<group>";
 		};
 		844E843F27497943005C0A54 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				844E844027497959005C0A54 /* ModeTypeView.swift */,
+				84225343274EE471002FA4CD /* ModeType */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -483,7 +488,6 @@
 		9050AD1BD12755D131EAF7778BDE8AA7 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				8440C74F2749729C004BE6E7 /* Pallete.swift */,
 				B476794B7375C47EC24370950151B26F /* Navigator */,
 			);
 			path = Helpers;
@@ -521,6 +525,7 @@
 		B380849C04D00738F50BE6FEFF77FCC1 /* UIModule */ = {
 			isa = PBXGroup;
 			children = (
+				84225338274EDD0D002FA4CD /* Kit */,
 				844E843F27497943005C0A54 /* Views */,
 				20F07967DAB4FDEDD6CBAE3401BC16F8 /* Extensions */,
 				9050AD1BD12755D131EAF7778BDE8AA7 /* Helpers */,
@@ -896,8 +901,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				51E6EE7FABFE265040E2933C34B06617 /* GeneralCoordinator.swift in Sources */,
-				84E18843274BF5BA00CF8DD9 /* CustomCollectionViewCell.swift in Sources */,
-				840D41322749955D005FAA0A /* UIImageView + Extension.swift in Sources */,
 				9394DC53F3B17D7B7CAAD891CD21E69F /* GeneralModule-dummy.m in Sources */,
 				502945C8E47264811F83CA58F25C578F /* MainModuleConfigurator.swift in Sources */,
 				71093A998E854B1A22DD36DCDA265C3E /* MainModuleInput.swift in Sources */,
@@ -947,6 +950,7 @@
 				A2F0685CC07B9761D90D041E7FEB7BBB /* UIModule-dummy.m in Sources */,
 				82140FBEFB237BD907E5BF6F404337E5 /* UITableView+.swift in Sources */,
 				8771BC85BC87C5F3668CD29C1B29FE9C /* UITableViewCell+.swift in Sources */,
+				84225340274EE101002FA4CD /* ModeTypeCell.swift in Sources */,
 				A479D2C5C759513CD827D94E27DA072E /* UIView+DefaultNibAssociatable.swift in Sources */,
 				51B80AA640D3D95F24F0F65B92E23940 /* UIView+LoadFromNib.swift in Sources */,
 				34D911823ECC6C31112AE9876ACE15A3 /* UIViewController+.swift in Sources */,

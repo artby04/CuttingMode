@@ -6,7 +6,8 @@
 //
 
 import Foundation
+import UIModule
 
 struct MainModuleModelsParams {
-    let mainPhoto: UIImage?
+    let collectionItems: [ModeTypeView.Model]
 }

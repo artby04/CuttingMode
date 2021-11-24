@@ -6,5 +6,8 @@
 //
 
 import Foundation
+import UIModule
 
-struct MainModuleViewControllerState {}
+struct MainModuleViewControllerState {
+    var collectionItems: [ModeTypeView.Model] = []
+}

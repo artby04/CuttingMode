@@ -37,6 +37,6 @@ extension MainModulePresenter: MainModuleInteractorOutput {}
 
 extension MainModulePresenter: MainModuleViewDataSource {
     func modelsParams() -> MainModuleModelsParams {
-        return MainModuleModelsParams(mainPhoto: nil)
+        return MainModuleModelsParams(collectionItems: interactor.getCollectionItems())
     }
 }

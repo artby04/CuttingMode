@@ -6,5 +6,8 @@
 //
 
 import Foundation
+import UIModule
 
-protocol MainModuleInteractorInput: AnyObject {}
+protocol MainModuleInteractorInput: AnyObject {
+    func getCollectionItems() -> [ModeTypeView.Model]
+}
