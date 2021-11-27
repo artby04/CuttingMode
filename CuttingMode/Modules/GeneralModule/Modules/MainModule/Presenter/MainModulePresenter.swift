@@ -27,6 +27,10 @@ extension MainModulePresenter: MainModuleInput {
 
 extension MainModulePresenter: MainModuleViewOutput {
     func viewDidLoad() {}
+
+    func didSelectedMode(with mode: CuttingMode) {
+        router.didSelectedMode(with: mode)
+    }
 }
 
 // MARK: - MainModuleInteractorOutput

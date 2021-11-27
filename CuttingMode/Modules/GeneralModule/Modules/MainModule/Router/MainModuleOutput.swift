@@ -7,4 +7,6 @@
 
 import Foundation
 
-protocol MainModuleOutput: AnyObject {}
+protocol MainModuleOutput: AnyObject {
+    func didSelectedMode(with mode: CuttingMode)
+}

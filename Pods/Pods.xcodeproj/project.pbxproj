@@ -50,6 +50,7 @@
 		8440C7502749729C004BE6E7 /* Pallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440C74F2749729C004BE6E7 /* Pallete.swift */; };
 		844E843E274977DA005C0A54 /* UIColor+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E843D274977DA005C0A54 /* UIColor+Init.swift */; };
 		844E844127497959005C0A54 /* ModeTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E844027497959005C0A54 /* ModeTypeView.swift */; };
+		847548772752C94D007C731F /* CuttingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847548762752C94D007C731F /* CuttingMode.swift */; };
 		84A5EC6367B32A6668E9E2EBEF600764 /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A288038E0189DD08183BC40166D9203 /* UICollectionView+.swift */; };
 		86D720CD42136A78A4A5C46F9C538350 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFFB67EF8E7135A063A1163E2BE514E /* ConstraintDSL.swift */; };
 		8771BC85BC87C5F3668CD29C1B29FE9C /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E835C19E2AF82704FC09CE773AF71D8 /* UITableViewCell+.swift */; };
@@ -196,6 +197,7 @@
 		8440C74F2749729C004BE6E7 /* Pallete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pallete.swift; sourceTree = "<group>"; };
 		844E843D274977DA005C0A54 /* UIColor+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Init.swift"; sourceTree = "<group>"; };
 		844E844027497959005C0A54 /* ModeTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeTypeView.swift; sourceTree = "<group>"; };
+		847548762752C94D007C731F /* CuttingMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuttingMode.swift; sourceTree = "<group>"; };
 		8CA0A5F80FD7D1C11B44362F2840A71F /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
 		8F5DE3E7E262E594468D20564DC6C73C /* DefaultReuseIdentifiable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultReuseIdentifiable.swift; sourceTree = "<group>"; };
 		90363F632F42F81DAFA242A8F46218E7 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
@@ -397,6 +399,7 @@
 		2E39C2A7DC21736BD56BD0D19D2077C0 /* GeneralModule */ = {
 			isa = PBXGroup;
 			children = (
+				847548752752C901007C731F /* Entities */,
 				51E4F06F0D5B7416202DE86CF6B604E9 /* GeneralModule.h */,
 				C1964544CEA6FEB2049BF8491686E551 /* Coordinators */,
 				5D4C4247B194F33800E09292ECF6D65D /* Modules */,
@@ -438,6 +441,7 @@
 		5D4C4247B194F33800E09292ECF6D65D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				847548742752C3E5007C731F /* MillingMode */,
 				06CF1F5228B68719180053161F8898A3 /* MainModule */,
 			);
 			path = Modules;
@@ -474,6 +478,21 @@
 				84225343274EE471002FA4CD /* ModeType */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		847548742752C3E5007C731F /* MillingMode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MillingMode;
+			sourceTree = "<group>";
+		};
+		847548752752C901007C731F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				847548762752C94D007C731F /* CuttingMode.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		853FDA85ED19582655438E72BC82EB1D /* Router */ = {
@@ -912,6 +931,7 @@
 				DD6C25683893845ACF1A7971191C97B7 /* MainModulePresenter.swift in Sources */,
 				24B934E5845C5F26A5F8365DB8577239 /* MainModulePresenterState.swift in Sources */,
 				99A089E735148E794BDAB4511162AE80 /* MainModuleViewController.swift in Sources */,
+				847548772752C94D007C731F /* CuttingMode.swift in Sources */,
 				DD99011BB94C558EAB9574E42ADB47D4 /* MainModuleViewControllerState.swift in Sources */,
 				4892FD3F2CF1532A98A99626487896D4 /* MainModuleViewDataSource.swift in Sources */,
 				5C8A42AC0C797457C0E44AF51C8A0978 /* MainModuleViewInput.swift in Sources */,

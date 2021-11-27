@@ -12,7 +12,7 @@ public class ModeTypeView: UIView {
     private let imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
-
+        imageView.tintColor = Pallete.Content.primary
         return imageView
     }()
 
@@ -43,7 +43,7 @@ public class ModeTypeView: UIView {
 
     public func configure(with model: Model) {
         imageView.image = model.image
-        label.text = model.title
+        label.text = model.title.uppercased()
     }
 
     private func setupUI() {
@@ -51,7 +51,8 @@ public class ModeTypeView: UIView {
         addSubview(label)
 
         imageView.snp.makeConstraints {
-            $0.top.left.right.equalToSuperview()
+            $0.left.right.equalToSuperview()
+           
         }
 
         label.snp.makeConstraints {

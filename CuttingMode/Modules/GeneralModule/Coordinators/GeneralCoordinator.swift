@@ -27,7 +27,9 @@ public final class GeneralCoordinator: Coordinatable {
         switch option {
         case .main:
             showMain(animated: animated, completion: completion)
+
         }
+
     }
 
     public func didRequestCloseModule(animated: Bool) {
@@ -45,6 +47,13 @@ public final class GeneralCoordinator: Coordinatable {
         presentable.title = "Режимы резания"
         navigator.push(presentable, animated: animated, completion: completion)
     }
+    func showMillingMode(animated: Bool, completion: (() -> Void)?) {
+        let moduleInfo = MainModuleConfigurator().configure(router: self)
+
+        let presentable = moduleInfo.view.toPresent()
+        presentable.title = "Фрезирование"
+        navigator.push(presentable, animated: animated, completion: completion)
+    }
 }
 
 extension GeneralCoordinator: NavigatorDelegate {
@@ -53,4 +62,17 @@ extension GeneralCoordinator: NavigatorDelegate {
     }
 }
 
-extension GeneralCoordinator: MainModuleOutput {}
+extension GeneralCoordinator: MainModuleOutput {
+    func didSelectedMode(with mode: CuttingMode) {
+        switch mode {
+        case .milling:
+            showMillingMode(animated: true, completion: nil)
+        default:
+            showMillingMode(animated: true, completion: nil)
+
+        }
+
+    }
+
+
+}

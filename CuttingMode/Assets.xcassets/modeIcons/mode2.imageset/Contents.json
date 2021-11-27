@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "7424481_cloud_sky_sleep_wind_white_icon.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "template"
+  }
+}

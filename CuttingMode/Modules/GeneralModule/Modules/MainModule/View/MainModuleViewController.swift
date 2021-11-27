@@ -19,16 +19,7 @@ final class MainModuleViewController: UIViewController {
     private var state = MainModuleViewControllerState()
 
     private lazy var collectionLayout: UICollectionViewFlowLayout = {
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .vertical
-        layout.itemSize = CGSize(
-            width: (view.frame.width / 2) - 3,
-            height: view.frame.width / 1.7
-        )
-        layout.minimumLineSpacing = 1
-        layout.minimumInteritemSpacing = 1
-
-        return layout
+        configurateCollectionLayout()
     }()
 
     private lazy var collectionView: UICollectionView = {
@@ -60,6 +51,19 @@ final class MainModuleViewController: UIViewController {
             make.left.right.equalToSuperview()
             make.bottom.equalToSuperview().offset(16)
         }
+    }
+
+    private func configurateCollectionLayout() -> UICollectionViewFlowLayout {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        layout.itemSize = CGSize(
+            width: (view.frame.width / 2) - 3,
+            height: view.frame.width / 1.7
+        )
+        layout.minimumLineSpacing = 1
+        layout.minimumInteritemSpacing = 1
+
+        return layout
     }
 }
 
@@ -97,5 +101,8 @@ extension MainModuleViewController: UICollectionViewDataSource {
 // MARK: - UICollectionViewDelegate
 
 extension MainModuleViewController: UICollectionViewDelegate {
-
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let mode = CuttingMode(rawValue: indexPath.row) else { return }
+        output.didSelectedMode(with: mode)
+    }
 }

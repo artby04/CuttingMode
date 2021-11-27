@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "296923_text_white_page_files_pages_icon.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "template"
+  }
+}

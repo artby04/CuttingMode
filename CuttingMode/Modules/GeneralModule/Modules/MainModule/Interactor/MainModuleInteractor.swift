@@ -18,12 +18,8 @@ final class MainModuleInteractor {
 
 extension MainModuleInteractor: MainModuleInteractorInput {
     func getCollectionItems() -> [ModeTypeView.Model] {
-        return [
-            .init(image: #imageLiteral(resourceName: "145659"), title: "ФРЕЗИРОВАНИЕ"),
-            .init(image: #imageLiteral(resourceName: "145659"), title: "ТОЧЕНИЕ"),
-            .init(image: #imageLiteral(resourceName: "145659"), title: "СВЕРЛЕНИЕ"),
-            .init(image: #imageLiteral(resourceName: "145659"), title: "КОНЦЕНТРАЦИЯ СОЖ"),
-            .init(image: #imageLiteral(resourceName: "145659"), title: "КОНЦЕНТРАЦИЯ СОЖ КОНЦЕНТРАЦИЯ"),
-        ]
+        CuttingMode.allCases.map {
+            ModeTypeView.Model(image: $0.image, title: $0.title)
+        }
     }
 }

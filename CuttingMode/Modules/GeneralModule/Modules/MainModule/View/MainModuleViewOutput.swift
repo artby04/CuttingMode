@@ -9,5 +9,6 @@ import Foundation
 
 protocol MainModuleViewOutput: AnyObject {
     func viewDidLoad()
+    func didSelectedMode(with mode: CuttingMode)
 }
 
