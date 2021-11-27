@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:readme.md">
+      location = "group:/Users/admin/Desktop/swift/CuttingMode/README.md">
    </FileRef>
    <FileRef
       location = "group:CuttingMode.xcodeproj">
