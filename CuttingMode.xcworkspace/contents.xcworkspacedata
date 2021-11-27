@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "container:"
+      name = "Screenshoots">
+      <FileRef
+         location = "group:Simulator Screen Shot - iPhone 11 - 2021-11-28 at 01.26.14.png">
+      </FileRef>
+      <FileRef
+         location = "group:Simulator Screen Shot - iPhone 11 - 2021-11-28 at 01.26.17.png">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:/Users/admin/Desktop/swift/CuttingMode/README.md">
    </FileRef>
